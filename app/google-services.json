@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "388997038258",
+    "firebase_url": "https://sharemesafely.firebaseio.com",
+    "project_id": "sharemesafely",
+    "storage_bucket": "sharemesafely.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:388997038258:android:3e4c0eddc8910f63",
+        "android_client_info": {
+          "package_name": "me.filedownloadingcheck"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "388997038258-817urmguti1sa8saj02dabmpnkothlig.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "me.filedownloadingcheck",
+            "certificate_hash": "ae90d433e7ca290ee365b7e997bbf6ff831faa67"
+          }
+        },
+        {
+          "client_id": "388997038258-7ibupn76aldj2t8llfi6i19e2gqj7525.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvwoz7PT4wGFJcCNBLjO-EeMIxMD9JJYE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "388997038258-7ibupn76aldj2t8llfi6i19e2gqj7525.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

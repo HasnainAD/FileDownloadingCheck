@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="General">
+
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="face_recognition_pref_key"
+            android:summary="Enable Face Recognition for Future Login"
+            android:title="Face Recognition" />
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

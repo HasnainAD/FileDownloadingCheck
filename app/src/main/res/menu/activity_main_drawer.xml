@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_uploaded"
+            android:icon="@drawable/upload_icon"
+            android:title="Uploaded" />
+        <item
+            android:id="@+id/nav_inbox"
+            android:icon="@drawable/inbox_icon"
+            android:title="Inbox" />
+        <item
+            android:id="@+id/nav_shared"
+            android:icon="@drawable/share_icon"
+            android:title="Shared" />
+
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile_icon"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/setting_icon"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout_icon"
+            android:title="Log Out" />
+
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/help_icon"
+            android:title="Help and Feedback" />
+
+    </group>
+
+</menu>

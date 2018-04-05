@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/folderGridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:gravity="center" />
+
+        <TextView
+            android:id="@+id/no_folder_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Media Detected"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+</RelativeLayout>

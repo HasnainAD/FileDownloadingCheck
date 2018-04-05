@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="me.filedownloadingcheck">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name=".helper.SampleApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:label="SMS"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.SignUpActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.UploadActivity"
+            android:label="Upload"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.InboxActivity"
+            android:label="Inbox"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ShareActivity"
+            android:label="Share"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.UploadFilesActivity"
+            android:label="Uploaded Files"
+            android:parentActivityName=".activities.UploadActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ShareFilesActivity"
+            android:label="Shared Files"
+            android:parentActivityName=".activities.ShareActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.InboxFilesActivity"
+            android:label="Inboxed Files"
+            android:parentActivityName=".activities.InboxActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ResetPasswordActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.Profile_Activity"
+            android:label="Profile" />
+        <activity
+            android:name=".activities.HelpActivity"
+            android:label="Feedback" />
+        <activity
+            android:name=".activities.SettingActivity"
+            android:label="Settings" />
+        <activity android:name=".activities.ContactsActivity" />
+
+        <service
+            android:name=".Services.UploadService"
+            android:exported="false" />
+        <service
+            android:name=".Services.ShareService"
+            android:exported="false" />
+        <service android:name=".Services.MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Services.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".activities.RecognitionActivity"
+            android:label="Recognition"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activities.UploadProgressActivity"
+            android:label="Uploading" />
+        <activity
+            android:name=".activities.SelectImageActivity"
+            android:label="Select An Image"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.RecognitionSignupActivity"
+            android:label="Recognition Signup"
+            android:parentActivityName=".activities.RecognitionActivity" />
+        <activity android:name=".activities.RecognitionSignInActivity"></activity>
+    </application>
+
+</manifest>
